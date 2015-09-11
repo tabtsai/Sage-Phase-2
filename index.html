@@ -4,11 +4,15 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sage</title>
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Teko:400,300' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
 </head>
-	<header>
-		<div class="logo"><img src="img/logo.png" alt="SAGE"></div>
-		<nav>
+	<header class="container clearfix">
+		<div class="logo"><img src="img/logo.svg" alt="SAGE"></div>
+		<nav class="mainnav">
 			<ul>
 				<li class = "active"><a href="#">Home</a></li>
 				<li><a href="#">Projects</a></li>
@@ -24,49 +28,49 @@
 
 <!-- MAIN CAROUSEL -->
 
-		<section>	
+		<section class="maincarousel">	
+			<div class ="container carouselcontent">
+				<ul>
+					<li>
+						<h1>We build websites and apps that people love</h1>
+						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+						<a class="mainaction" href="#">Explore More</a>
+					</li>
+					<li class = "hidden">
+						<h1>We build websites and apps that people love</h1>
+						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+						<a href="#">Explore More</a>
+					</li>
+					<li class = "hidden">
+						<h1>We build websites and apps that people love</h1>
+						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+						<a href="#">Explore More</a>
+					</li>
+					<li class = "hidden">
+						<h1>We build websites and apps that people love</h1>
+						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+						<a href="#">Explore More</a>
+					</li>
+				</ul>
+			</div>
 			<nav>
 				<ul>
-					<li class = "active"></li>
 					<li></li>
+					<li class = "active"></li>
 					<li></li>
 					<li></li>
 				</ul>
 			</nav>
-				<div>
-					<ul>
-						<li>
-							<h1>We build websites and apps that people love</h1>
-							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-							<a href="#">Explore More</a>
-						</li>
-						<li>
-							<h1>We build websites and apps that people love</h1>
-							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-							<a href="#">Explore More</a>
-						</li>
-						<li>
-							<h1>We build websites and apps that people love</h1>
-							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-							<a href="#">Explore More</a>
-						</li>
-						<li>
-							<h1>We build websites and apps that people love</h1>
-							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-							<a href="#">Explore More</a>
-						</li>
-					</ul>
-				</div>
 		</section>
 
 <!-- MY PROJECTS -->
 
-		<section>
+		<section class="projects clearfix">
 			<h2>My Projects</h2>
 			<article>
 				<figure>
-					<a href="#"><img src="img/tesla.jpg" alt="tesla project" /></a>
-					<figcaption>
+					<a href="#"><img src="img/tesla930x500.jpg" alt="tesla project" /></a>
+					<figcaption class = "hidden">
 						<h4>
 							<time datetime="2014">Year 2014</time>
 							client:Tesla
@@ -78,13 +82,15 @@
 						</ul>
 					</figcaption>
 				</figure>	
-				<h3>Model S Catalog</h3>
-				<p>Information materials that will help to discover all features of the serial electric car Tesla Model S.</p>	
+				<div>
+					<h3>Model S Catalog</h3>
+					<p>Information materials that will help to discover all features of the serial electric car Tesla Model S.</p>
+				</div>	
 			</article>	
 			<article>
 				<figure>
-					<a href="#"><img src="img/discovery.jpg" alt="discovery project" /></a>
-					<figcaption>
+					<a href="#"><img src="img/discovery930x500.jpg" alt="discovery project" /></a>
+					<figcaption class = "hidden">
 						<h4>
 							<time datetime="2014">Year 2014</time>
 							client:Discovery Channel
@@ -95,14 +101,16 @@
 							<li>Editorial</li>
 						</ul>
 					</figcaption>
-				</figure>	
-				<h3>Discovery Channel iPad</h3>
-				<p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>	
+				</figure>
+				<div>	
+					<h3>Discovery Channel iPad</h3>
+					<p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>	
+				</div>
 			</article>	
 			<article>
 				<figure>
-					<a href="#"><img src="img/stuhrling.jpg" alt="stuhrling project" /></a>
-					<figcaption>
+					<a href="#"><img src="img/stuhrling930x500.jpg" alt="stuhrling project" /></a>
+					<figcaption class = "hidden">
 						<h4>
 							<time datetime="2014">Year 2014</time>
 							client:Stuhrling
@@ -113,14 +121,16 @@
 							<li>Editorial</li>
 						</ul>
 					</figcaption>
-				</figure>	
-				<h3>Stuhrling</h3>
-				<p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>	
+				</figure>
+				<div>		
+					<h3>Stuhrling</h3>
+					<p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>
+				</div>	
 			</article>	
 			<article>
 				<figure>
-					<a href="#"><img src="img/infinity.jpg" alt="infinity project" /></a>
-					<figcaption>
+					<a href="#"><img src="img/infinity930x500.jpg" alt="infinity project" /></a>
+					<figcaption class = "hidden">
 						<h4>
 							<time datetime="2014">Year 2014</time>
 							Client:Infinity Spaces
@@ -132,8 +142,10 @@
 						</ul>
 					</figcaption>
 				</figure>	
-				<h3>Infinity Spaces</h3>
-				<p>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields.</p>	
+				<div>
+					<h3>Infinity Spaces</h3>
+					<p>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields.</p>	
+				</div>
 			</article>	
 
 			<a href="#">Show More Projects</a>
@@ -141,36 +153,38 @@
 
 <!-- CALL TO ACTION -->
 
-		<section>
+		<section class = "callaction">
 			<h2>Showcasing your work has never been more fun</h2>
 			<p>Discover elegant solution for your online portfolio. Fast, reliable, affordable..</p>
-			<a href="#">Get in Touch</a>
+			<a class="mainaction" href="#">Get in Touch</a>
 		</section>
 
 <!-- STAY CONNECTED -->
 
 		<aside>
-			<h2>Stay Connected</h2>
-			<p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
-			<ul>
-				<li>
-					<a href="#" target="_blank"><i class="fa fa-behance"></i>Behance</a>
-				</li>
-				<li>
-					<a href="#" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
-				</li>
-				<li>
-					<a href="#" target="_blank"><i class="fa fa-pinterest"></i>Pinterest</a>
-				</li>
-				<li>
-					<a href="#" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a>
-				</li>
-			</ul>
+			<div class ="container">
+				<h2>Stay Connected</h2>
+				<p>Join us on our social networks for all the latest updates, product/service announcements and many more</p>
+				<ul>
+					<li>
+						<a href="#" target="_blank"><i class="fa fa-behance"></i>Behance</a>
+					</li>
+					<li>
+						<a href="#" target="_blank"><i class="fa fa-facebook"></i>Facebook</a>
+					</li>
+					<li>
+						<a href="#" target="_blank"><i class="fa fa-pinterest"></i>Pinterest</a>
+					</li>
+					<li>
+						<a href="#" target="_blank"><i class="fa fa-linkedin"></i>LinkedIn</a>
+					</li>
+				</ul>
+			</div>
 		</aside>
 	</main>		
 
 	<!-- MAIN ENDS -->
 	
-	<footer>
+	<footer class = "container">
 		<p>Copyright &copy; 2015 SAGE Agency Worldwide. All rights reserved.</p>
 	</footer>
