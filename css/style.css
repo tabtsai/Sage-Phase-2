@@ -8,8 +8,8 @@ body{
 	line-height: 1.2;
 	text-align:center;
 	color: #555;
-	background:#fff;
-	
+	font-size: 62.5%;
+		
 }
 
 .clearfix:after{
@@ -18,11 +18,11 @@ body{
 	clear: both;
 }
 
-.hidden{
-	display:none;
+p{
+	font-size:1.6em;
 }
 
-h1, h2, h3, a{
+h1, h2, h3, h4, a{
 	font-family: 'Teko', sans-serif;
 	font-weight: 400;
 	text-transform: uppercase;	
@@ -32,16 +32,16 @@ h1, h2, h3, a{
 h1{ font-weight: 300;
 	color: #fff;
 	letter-spacing: 13px;
-	font-size:100px;
+	font-size:12em;
 }
 
-h2{ font-size: 40px;
+h2{ font-size: 4.0em;
 	letter-spacing: 3px;
     margin-top:30px;
 }
 
 h3{	display: inline-block;
-	font-size: 30px;
+	font-size: 3.0em;
     letter-spacing: 2px;
     margin-bottom:10px;
 }
@@ -49,14 +49,15 @@ h3{	display: inline-block;
 a{
 	text-decoration: none;
 	display:inline-block;
-	font-size:16px;
+	font-size:2.0em;
 }
 
 ul li{
 	display:inline-block;
 }
 
-a.mainaction{  
+a.mainAction{  
+
 	font-family: 'Teko', sans-serif;
 	font-weight:400;
 	padding: 10px 50px;
@@ -66,9 +67,15 @@ a.mainaction{
 	letter-spacing: 3px;
 }
 
-a.mainaction:hover{
+a.mainAction:hover{
 	color:#fff;
 	background:#000;
+}
+
+.container{
+	max-width: 1170px;
+	margin: 0 auto;
+	width: 70%;
 }
 
 /** Header **/
@@ -79,91 +86,131 @@ a.mainaction:hover{
 	height:70px;
 }
 
-.mainnav{
+.mainNav{
 	float:right;
 }
 
-.mainnav ul li {
+.mainNav ul li {
 	display:inline-block;
 	margin: 0 20px;
 	padding: 24.5px 0;
 }
 
-.mainnav ul li.active{
+.mainNav ul li.active{
 	border-bottom: solid #f63c3c 5px;
 }
 
-.mainnav a{
+.mainNav a{
 	font-family: 'Titillium Web', sans-serif;
-	font-size:14px;
+	font-size:1.4em;
 	text-transform:capitalize;
 }
-.mainnav ul li.active a{
+.mainNav ul li.active a{
 	color:#f63c3c;
 }
 
-.mainnav ul li:hover{
+.mainNav ul li:hover{
 	border-bottom: solid #f63c3c 5px;
 }
 
-.mainnav a:hover{
+.mainNav a:hover{
 	color:#f63c3c;
 }
 
 /** Main Carousel **/
 
-.maincarousel{
+#mainCarousel{
 	position:relative;
-	width: 100%;
-	height: 800px;
-	background: #30282a url(../img/bkgd.jpg) center center no-repeat;
-	background-size: cover;
+	width:100%;
+	overflow:hidden;
+
 }
 
-.maincarousel p{
+#slider{
+	width:100%;
+	height:800px;
+	position:relative;
+	overflow:hidden;
+	float:left;
+
+}
+
+.dimmer{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: rgba(0,0,0, 0.5);
+}
+
+
+.slide{
+	position:absolute;
+}
+
+
+.slideNav{
+	height: 3px;
+	width: 30px;
+	background:#000;
+	opacity:.2;
+	margin-right: 6px;
+}
+
+div.carouselContent {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+
+/**still need margin to center a smaller width for p tag than container **/
+div.carouselContent p{
 	color:#d7d6d8;
-	font-size:20px;
+	font-size:2.0em;
 	width:65%;
 	margin:10px auto;
 }
 
-.container{
-	max-width: 1170px;
-	margin: 0 auto;
-	width: 70%;
-}
-/**not sure this is good to do **/
-div.carouselcontent {
-	position: relative;
- 	top: 50%;
- 	transform: translateY(-50%);
-}
 
-.maincarousel nav{
+
+#mainCarousel nav{
 	position:absolute;
 	left: 50%;	
-    transform: translateX(-50%);	
-	top:95%;
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  	-moz-transform: translateX(-50%);
+  	-o-transform: translateX(-50%);	
+	bottom:5%;
+	z-index: 2;
 }
 
-.maincarousel nav ul li{
+#mainCarousel nav ul li{
 	height: 3px;
 	width: 30px;
 	background:#fff;
 	opacity:.2;
 	margin-right: 6px;
+
 }
 
-.maincarousel nav ul li:last-child{
+#mainCarousel nav ul li:last-child{
 	margin-right:0;
 }
 
-.maincarousel nav ul li.active{
+#mainCarousel nav ul li.active{
 	opacity:1.0;
 }
 
 /** Projects **/
-
+/** add additional div for articles **/
 .projects{
 	margin: 0 auto;
 	width:98%;
@@ -173,13 +220,13 @@ div.carouselcontent {
 	margin-bottom:25px;
 }
 
-.projects article{
+.projects div article{
 	margin-right:1%;
 	float:left;
 	width:49.5%;
 }
 
-.projects article:nth-child(2n+1){
+.projects div article:nth-child(even){
 	margin-right:0%;
 }
 
@@ -211,18 +258,91 @@ section.projects > a:hover{
 	color: #999;
 }
 
+figure {
+  display: inline-block;
+  position: relative;
+  overflow:hidden;
+}
+
+figure a {
+  display: block;
+}
+
+figure:hover:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+figcaption {
+  position: absolute;
+  height:100%;
+  background-color: red;
+  bottom:100%;
+  width:100%;
+  border: 20px solid black;
+  transition: bottom 0.5s ease;
+  -webkit-transition: bottom 0.5s ease;
+  -moz-transition: bottom 0.5s ease;
+  -o-transition: bottom 0.5s ease;
+}
+
+
+
+figure:hover figcaption {
+	bottom:0;
+}
+
+figcaption time{
+	display:block;
+	margin-top:130px;
+	color:white;
+	font-weight: 300;
+	letter-spacing:3px;
+}
+
+figcaption h4{
+	color:white;
+	font-size: 2.4em;
+	font-weight: 300;
+	letter-spacing:3px;
+}
+
+
+figcaption p{
+	position:absolute;
+
+	font-family: 'Teko', sans-serif;
+	color:white;
+	font-size: 1.8em;
+	text-transform:uppercase;
+	font-weight: 300;
+	letter-spacing:1px;
+	left: 50%;	
+    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+  	-moz-transform: translateX(-50%);
+  	-o-transform: translateX(-50%);	
+	bottom:25%;
+	
+}
+
 
 /** Call to Action**/
 
 
-.callaction{
+.callAction{
 	background:#f63c3c;
 	color: #fba0a0;
 	padding: 15px 0;
-	font-size:16px;
+	
 }
 
-.callaction h2{
+.callAction h2{
 	font-weight:300;
 	color:#fff;
 	margin-bottom:6px;
@@ -248,7 +368,7 @@ aside li{
 	background:#000;
 	width:23%;
 	color:#fff;
-	margin-right:24px;
+	margin-right:2%;
 }
 
 
@@ -259,7 +379,7 @@ aside li:last-child{
 aside a{
 	display:block;
 	padding: 50px 0;
-	font-size: 30px;
+	font-size: 3.0em;
 	background:#000;
 	text-decoration:none;
 	color:#fff;
@@ -285,6 +405,11 @@ i.fa {
 footer{
 	text-align:left;
 }
-footer.container{
+
+footer p{
+	font-size:1.3em;
+
+}
+	footer.container{
 	padding:10px 0 20px;
 }

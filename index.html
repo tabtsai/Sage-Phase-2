@@ -9,10 +9,14 @@
 	<link href='https://fonts.googleapis.com/css?family=Teko:400,300' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Titillium+Web:300' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/carouselstyle.css">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 	<header class="container clearfix">
 		<div class="logo"><img src="img/logo.svg" alt="SAGE"></div>
-		<nav class="mainnav">
+		<nav class="mainNav">
 			<ul>
 				<li class = "active"><a href="#">Home</a></li>
 				<li><a href="#">Projects</a></li>
@@ -28,135 +32,136 @@
 
 <!-- MAIN CAROUSEL -->
 
-		<section class="maincarousel">	
-			<div class ="container carouselcontent">
+		<section id="mainCarousel">	
+			<div id= "slider">
+
 				<ul>
-					<li>
-						<h1>We build websites and apps that people love</h1>
-						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-						<a class="mainaction" href="#">Explore More</a>
+					<li class = "slide activeslide" id="pic1">
+						<div class ="container carouselContent">
+							<h1>We build websites and apps that people love</h1>
+							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+							<a class="mainAction" href="#">Explore More</a>
+						</div>
 					</li>
-					<li class = "hidden">
-						<h1>We build websites and apps that people love</h1>
-						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-						<a href="#">Explore More</a>
+					<li class = "slide" id="pic2">
+						<div class ="container carouselContent">
+							<h1>We build websites and apps that people love</h1>
+							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+							<a class="mainAction" href="#">Explore More</a>
+						</div>
 					</li>
-					<li class = "hidden">
-						<h1>We build websites and apps that people love</h1>
-						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-						<a href="#">Explore More</a>
+					<li class = "slide" id="pic3">
+						<div class ="container carouselContent">
+							<h1>We build websites and apps that people love</h1>
+							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+							<a class="mainAction" href="#">Explore More</a>
+						</div>
 					</li>
-					<li class = "hidden">
-						<h1>We build websites and apps that people love</h1>
-						<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
-						<a href="#">Explore More</a>
+					<li class = "slide" id="pic4">
+						<div class ="container carouselContent">
+							<h1>We build websites and apps that people love</h1>
+							<p>Full suite of internet services in the areas of website development, web-based enterprise solutions, corporate identity and advertisement.</p>
+							<a class="mainAction" href="#">Explore More</a>
+						</div>
 					</li>
+
 				</ul>
+				<div id="prev" class="arrow"></div>
+				<div id="next" class="arrow"></div>	
+
+				<nav>
+					<ul>
+						<li id ="1" class= "active slideNav"></li>
+						<li id ="2" class="slideNav"></li>
+						<li id ="3" class="slideNav"></li>
+						<li id ="4" class="slideNav"></li>
+					</ul>
+				</nav>
+				<div class="dimmer"></div>
 			</div>
-			<nav>
-				<ul>
-					<li></li>
-					<li class = "active"></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</nav>
+			
+
 		</section>
 
 <!-- MY PROJECTS -->
 
-		<section class="projects clearfix">
+		<section class="projects">
 			<h2>My Projects</h2>
-			<article>
-				<figure>
-					<a href="#"><img src="img/tesla930x500.jpg" alt="tesla project" /></a>
-					<figcaption class = "hidden">
-						<h4>
-							<time datetime="2014">Year 2014</time>
-							client:Tesla
-						</h4>
-						<ul>
-							<li>Digital</li>
-							<li>Mobile</li>
-							<li>Editorial</li>
-						</ul>
-					</figcaption>
-				</figure>	
-				<div>
-					<h3>Model S Catalog</h3>
-					<p>Information materials that will help to discover all features of the serial electric car Tesla Model S.</p>
-				</div>	
-			</article>	
-			<article>
-				<figure>
-					<a href="#"><img src="img/discovery930x500.jpg" alt="discovery project" /></a>
-					<figcaption class = "hidden">
-						<h4>
-							<time datetime="2014">Year 2014</time>
-							client:Discovery Channel
-						</h4>
-						<ul>
-							<li>Digital</li>
-							<li>Mobile</li>
-							<li>Editorial</li>
-						</ul>
-					</figcaption>
-				</figure>
-				<div>	
-					<h3>Discovery Channel iPad</h3>
-					<p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>	
-				</div>
-			</article>	
-			<article>
-				<figure>
-					<a href="#"><img src="img/stuhrling930x500.jpg" alt="stuhrling project" /></a>
-					<figcaption class = "hidden">
-						<h4>
-							<time datetime="2014">Year 2014</time>
-							client:Stuhrling
-						</h4>
-						<ul>
-							<li>Digital</li>
-							<li>Mobile</li>
-							<li>Editorial</li>
-						</ul>
-					</figcaption>
-				</figure>
-				<div>		
-					<h3>Stuhrling</h3>
-					<p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>
-				</div>	
-			</article>	
-			<article>
-				<figure>
-					<a href="#"><img src="img/infinity930x500.jpg" alt="infinity project" /></a>
-					<figcaption class = "hidden">
-						<h4>
-							<time datetime="2014">Year 2014</time>
-							Client:Infinity Spaces
-						</h4>
-						<ul>
-							<li>Digital</li>
-							<li>Mobile</li>
-							<li>Editorial</li>
-						</ul>
-					</figcaption>
-				</figure>	
-				<div>
-					<h3>Infinity Spaces</h3>
-					<p>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields.</p>	
-				</div>
-			</article>	
-
+			<div class = "clearfix">
+				<article>
+					<figure>
+						<a href="#"><img src="img/tesla930x500.jpg" alt="tesla project" /></a>
+						<figcaption class>
+							<h4>
+								<time datetime="2014">Year 2014</time>
+								client: Tesla
+							</h4>
+							<p>Digital / Mobile / Editorial</p>
+						</figcaption>
+					</figure>	
+					<div>
+						<h3>Model S Catalog</h3>
+						<p>Information materials that will help to discover all features of the serial electric car Tesla Model S.</p>
+					</div>	
+				</article>	
+				<article>
+					<figure>
+						<a href="#"><img src="img/discovery930x500.jpg" alt="discovery project" /></a>
+						<figcaption class>
+							<h4>
+								<time datetime="2014">Year 2014</time>
+								client: Discovery Channel
+							</h4>
+							<p>Digital / Mobile / Editorial</p>
+						</figcaption>
+					</figure>
+					<div>	
+						<h3>Discovery Channel iPad</h3>
+						<p>The space is designed to inspire, and pique curiosity and encourage visitors to express their own creativity</p>	
+					</div>
+				</article>	
+				<article>
+					<figure>
+						<a href="#"><img src="img/stuhrling930x500.jpg" alt="stuhrling project" /></a>
+						<figcaption>
+							<h4>
+								<time datetime="2014">Year 2014</time>
+								client: Stuhrling
+							</h4>
+							<p>Digital / Mobile / Editorial</p>
+						</figcaption>
+					</figure>
+					<div>		
+						<h3>Stuhrling</h3>
+						<p>Flexible multi-concept portfolio theme  based on WordPress. Built by designers, for designers, creative agencies and studios.</p>
+					</div>	
+				</article>	
+				<article>
+					<figure>
+						<a href="#"><img src="img/infinity930x500.jpg" alt="infinity project" /></a>
+						<figcaption>
+							<h4>
+								<time datetime="2014">Year 2014</time>
+								Client: Infinity Spaces
+							</h4>
+							<p>Digital / Mobile / Editorial</p>
+						</figcaption>
+					</figure>	
+					<div>
+						<h3>Infinity Spaces</h3>
+						<p>Infinity ∞ is an abstract concept describing something without any limit and is relevant in a number of fields.</p>	
+					</div>
+				</article>	
+			</div>
 			<a href="#">Show More Projects</a>
 		</section>
 
 <!-- CALL TO ACTION -->
 
-		<section class = "callaction">
+		<section class = "callAction">
 			<h2>Showcasing your work has never been more fun</h2>
 			<p>Discover elegant solution for your online portfolio. Fast, reliable, affordable..</p>
-			<a class="mainaction" href="#">Get in Touch</a>
+			<a class="mainAction" href="#">Get in Touch</a>
 		</section>
 
 <!-- STAY CONNECTED -->

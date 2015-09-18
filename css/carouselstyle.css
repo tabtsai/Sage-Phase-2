@@ -1,0 +1,57 @@
+
+#pic1{
+background-image: url(../img/bkgd.jpg);
+width:100%;
+height:800px;
+background-size: cover;
+}
+
+#pic2{
+background-image: url(../img/bkgd2.jpg);
+width:100%;
+height:800px;
+background-size: cover;
+}
+
+#pic3{
+background-image: url(../img/bkgd3.jpg);
+width:100%;
+height:800px;
+background-size: cover;
+}
+
+#pic4{
+background-image: url(../img/bkgd4.jpg);
+width:100%;
+height:800px;
+background-size: cover;
+}
+
+
+.arrow{	
+	position:absolute;
+	top: 50%;
+	transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  	-moz-transform: translateY(-50%);
+  	-o-transform: translateY(-50%);	
+  	z-index: 2;
+}
+
+#prev{
+	background-image: url(../img/leftarrow.svg);
+	background-size: cover;
+	width:20px;
+	height:40px;
+	left:2%;
+}
+
+#next{
+	
+	background-image: url(../img/rightarrow.svg);
+	background-size: cover;
+	width:20px;
+	height:40px;
+	right:2%;
+}
+
